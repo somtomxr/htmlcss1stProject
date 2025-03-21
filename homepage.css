@@ -1,35 +1,375 @@
-body{
-   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .navtop{
-    background-color: rgba(240, 237, 237, 0.171);
+    position:  sticky;
+    top: 0;
+    /* position: fixed; */
+    /* width: 100%; */
+
+    background-color: rgba(251, 251, 251, 0.98);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-inline: 170px;
-    height: 0px;
-    padding-block: 17px;
-    
-
+    padding-inline: 180px;
+    height: 45px;
 }
+
+
+
 
 .navtop ul{
     display: flex;
     list-style: none;
-    gap: 50px;
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 12px;
+    gap: 40px;  
+  
+}
+.navtop ul li a{
+    
+    font-weight: 200;
+    font-size: 12px; 
 }
 
 
+.navtop a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    
+}
+.fa-apple{
+    font-size: 110%;
+}
+.navbarlogo:hover{
+    color: rgba(23, 21, 21, 0.647);
+}
+
+.navtop ul li a:hover{
+    color: rgba(23, 21, 21, 0.647);
+    
+}
+
 .afternav{
+    /* padding-top: 60px; */
+    margin-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: center;
     gap: 5px;
 
-    font-family: sans-serif;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
 }
+
+.shop a{
+    text-decoration: none;
+    color: rgb(83, 163, 239);
+}
+
+.section1{
+    background: linear-gradient(to bottom, rgb(205, 230, 244), rgb(240, 245, 246));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.section1 h1{
+    color: rgb(29, 29, 31);
+    padding-top: 50px;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.section1 h2{
+    color: rgb(29, 29, 31);
+    font-size:28px;
+    font-weight: 300;
+}
+
+
+.bothbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px; 
+    
+}
+
+.learnmore1{
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: rgb(48, 111,219);
+    border-radius: 20px;
+    border: none;
+}
+
+.buy1{
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    width: 70px;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid ;
+    border-color: rgb(48, 111, 219);
+    border-width: 1px;
+    color: rgb(48, 111, 219);
+}
+.section1 img{
+    height: 350px;    
+}
+.gradient-text1{
+    font-size: 21px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #007aff, #ff2d55); /* Blue to Pinkish Red */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */    
+}
+
+
+.section1 p{  
+    color: #888;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.section2{
+    margin-top: 15px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(159, 214, 229), rgb(241, 244, 242));
+}
+
+.section2 .heading{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: rgb(29, 29, 31);
+    padding-top: 50px;
+    gap: 10px;
+} 
+
+.section2 .ipad{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.section2 .air{
+ height: 40px;
+}
+
+.section2 h2{
+    color: rgb(29, 29, 31);
+    font-size:28px;
+    font-weight: 300;
+}
+
+.bothbutton2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;   
+}
+.learnmore2{
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: rgb(48, 111,219);
+    border-radius: 20px;
+    border: none; 
+}
+
+.buy2{
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    width: 70px;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid ;
+    border-color: rgb(48, 111, 219);
+    border-width: 1px;
+    color: rgb(48, 111, 219);  
+}
+
+.section2 .ipadimg{
+    height: 400px;
+    margin-right: 200px;  
+}
+.gradient-text{
+    font-size: 21px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #007aff, #ff2d55); /* Blue to Pinkish Red */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */     
+}
+
+
+.section2 p{  
+    color: #888;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 300;   
+}
+
+.section3{
+    margin-top: 15px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(242, 242, 245);
+}
+
+.section3 h1{
+    color: rgb(29, 29, 31);
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.section3 h2{
+    color: rgb(29, 29, 31);
+    font-size:28px;
+    font-weight: 300;
+}
+
+.bothbutton3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 25px; 
+    margin-bottom: 50px;  
+}
+
+.learnmore3{
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: rgb(48, 111,219);
+    border-radius: 20px;
+    border: none;
+}
+
+.buy3{
+    font-size: 16px;
+    font-weight: 300;
+    height: 40px;
+    width: 70px;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid ;
+    border-color: rgb(48, 111, 219);
+    border-width: 1px;
+    color: rgb(48, 111, 219);
+}
+
+.section3 img{
+    height: 200px;   
+}
+.gradient-text{
+    margin-top: 50px;
+    font-size: 21px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #007aff, #ff2d55); /* Blue to Pinkish Red */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */    
+}
+
+
+.section3 p{  
+    color: #888;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 50px; 
+}  
+
+
+.section4{
+    display: flex;
+    margin-block: 12px;
+   
+}
+.section4 .ipaddiv{
+    margin-left: 12px;
+    margin-right: 11px;
+    width: 695px;
+    height: 580px;
+    background-color: #f6f6f6;
+    
+}
+.section4 .iphonediv{
+    margin-right: 12px;
+    width: 695px;
+    height: 580px;
+    background-color: #f6f6f6;
+}
+
+.section4 .ipaddiv img{
+    height: 300px;
+}
+
+.section4 .iphonediv img{
+    height: 300px;
+}
+
+
+
+
+
+
+
+.sectionlast{
+    margin-top: 20px;
+    padding-inline: 250px;
+    background-color: #f6f6f6;
+}
+
+.description{
+    padding-top: 20px;
+}
+
+.description p{
+    color: #888;
+}
+
+.hrbottom{
+    margin-top: 20px;
+    height: 1px;  
+}
+
+
+
+
+
 
