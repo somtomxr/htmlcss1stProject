@@ -30,7 +30,6 @@ body{
 
 
 
-
 .navtop ul{
     display: flex;
     list-style: none;
@@ -316,37 +315,17 @@ body{
 }  
 
 
-.section4{
-    display: flex;
-    margin-block: 12px;
+.section4-grid{
+    height: 150vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    
    
 }
-.section4 .ipaddiv{
-    margin-left: 12px;
-    margin-right: 11px;
-    width: 695px;
-    height: 580px;
-    background-color: #f6f6f6;
-    
+
+.section4-grid .ipaddiv {
+    background-image: url(iphone16fam.jpg);
 }
-.section4 .iphonediv{
-    margin-right: 12px;
-    width: 695px;
-    height: 580px;
-    background-color: #f6f6f6;
-}
-
-.section4 .ipaddiv img{
-    height: 300px;
-}
-
-.section4 .iphonediv img{
-    height: 300px;
-}
-
-
-
-
 
 
 
@@ -370,55 +349,6 @@ body{
     height: 1px;  
 }
 
-
-
-@media screen and (max-width:700px) 
-{
-    .navbar label{
-        display: block;
-    }
-    .navtop ul{
-        display: none;
-    }
-    .navtop ul{
-        display: none;
-        position: absolute;
-        top: 100px;
-        background-color: beige;
-        width: 100%;
-       
-    }
-    .navtop ul li{
-        padding: 20px;
-        
-    }
-
-    .navtop .search{
-        display: none;
-    }
-
-    .navtop .bag{
-        display: none;
-    }
-
-    section{
-        display: none;
-    }
-
-    #click:checked~.navtop ul{
-        display: block;
-    }
-    
-
-
-
-    
-}
-
-.navtop label{
-    display: none;
-    
-}
 
 
 
