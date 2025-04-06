@@ -1,0 +1,44 @@
+.grid{
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 12px;
+    gap: 12px;
+    
+   
+}
+
+.grid div {
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 100vh; /* Adjust as needed */
+}
+
+
+.grid .gridSec1 {
+    background-image: url(ipad.jpg);
+        
+    
+}
+.grid .gridSec2 {
+    background-image: url(iphone16fam.jpg);
+  
+} 
+.grid .gridSec3 {
+    background-image: url(tradein.jpg);
+   
+}
+.grid .gridSec4 {
+    background-image: url(watch.jpg);
+  
+}
+.grid .gridSec5 {
+    background-image: url(airpods.jpg);
+   
+}
+.grid .gridSec6 {
+    background-image: url(ipadpro.jpg);
+    
+   
+}
