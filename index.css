@@ -10,7 +10,8 @@
 
 
 body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family:  -apple-system, 'Inter', sans-serif;
 }
 
 .navtop{
@@ -24,14 +25,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 45px;
-    gap: 5vh ;
+    gap: 50px;
     
 
    
 }
 .navtop div{
     display: flex;
-    gap: 5vh;
+    gap: 50px;
  }
 
 
@@ -41,7 +42,7 @@ body{
 .navtop ul{
     display: flex;
     list-style: none;
-    gap: 5vh;
+    gap: 50px;
 }
 
 .navtop ul li a{
@@ -149,7 +150,7 @@ body{
     color: rgb(48, 111, 219);
 }
 .section1 img{
-    height: 44vh; 
+    height: 350px; 
 }
 .gradient-text1{
     font-size: 21px;
@@ -234,8 +235,8 @@ body{
 }
 
 .section2 .ipadimg{
-    height: 50vh;
-    margin-right: 25vh;  
+    height: 400px;
+    margin-right: 200px;  
 }
 .gradient-text2{
     font-size: 21px;
@@ -261,7 +262,6 @@ body{
     flex-direction: column;
     align-items: center;
     background: rgb(242, 242, 245);
-    
 }
 
 .section3 h1{
@@ -311,7 +311,7 @@ body{
 }
 
 .section3 img{
-    height: 25vh;   
+    height: 200px;   
 }
 .gradient-text3{
     margin-top: 50px;
@@ -333,13 +333,12 @@ body{
 
 
 .grid{
-    height: 204vh;
+    height: 1760px;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-auto-rows: 1fr;
     margin: 12px;
-    gap: 12px;
-    
-   
+    gap: 12px;   
 }
 
 .grid .in {
@@ -350,7 +349,7 @@ body{
     background-size: cover;
     background-position: center;
     /* background-repeat: no-repeat; */
-    height: 100%; /* Adjust as needed */
+    /* height: 100%; Adjust as needed */
 
     text-align: center;
 }
@@ -368,47 +367,34 @@ body{
 }
 
 
-
-
 .grid .gridSec1 {
     background-image: url(ss/ipad.jpg);
-
-        
-    
 }
 .grid .gridSec2 {
     background-image: url(ss/iphone16fam.jpg);
-  
 }
 .grid .gridSec3 {
     background-image: url(ss/tradein.jpg);
-   
 }
 .grid .gridSec4 {
     background-image: url(ss/watch.jpg);
-  
 }
 .grid .gridSec5 {
     background-image: url(ss/airpods.jpg);
-   
 }
 .grid .gridSec6 {
     background-image: url(ss/ipadpro.jpg);
-
-    
 }  
 
 
 
 
+
 .grid .in .bothbutton{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding-top: 20px; 
-    
-    
+    gap: 20px; */
 }
 
 .grid .in .bothbutton .button1{
@@ -420,7 +406,6 @@ body{
     background-color: rgb(48, 111,219);
     border-radius: 20px;
     border: none;
-    
 }
 
 .grid .in .bothbutton .button2{
@@ -445,11 +430,37 @@ body{
     background-color: rgb(48, 111,219);
     border-radius: 20px;
     border: none;
-    
 }
-
-
-
+.grid .gridSec2 .bothbutton{
+    margin-top: -5px;
+}
+.grid .gridSec3 img{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+.grid .gridSec4 img{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+.grid .gridSec5 h1{
+    margin-top: 330px;
+    margin-bottom: 10px;
+    color: white;
+}
+.grid .gridSec5 h2,
+.grid .gridSec6 h1,
+.grid .gridSec6 h2 {
+    color: white;
+}
+.grid .gridSec6 .gradient-text{
+    margin-top: 300px;
+    margin-bottom: 5px;
+}
+.grid .gridSec6 p{
+    color: rgb(100, 100, 100);
+}
 .grid .in .gradient-text{
     font-size: 16px;
     font-weight: 500;
@@ -461,34 +472,56 @@ body{
     color: #888;
     font-size: 12px;
     font-weight: 300;
-    margin-top: 8px;
-    margin-bottom: 50px; 
+    /* margin-top: 8px; */
+    /* margin-bottom: 50px;  */
 }  
 .grid .gridSec1 .bothbutton{
     margin-bottom: 20px;
-
 }
-.bottom{
-    
+.grid .gridSec2 .bothbutton{
+    margin-bottom: 10px;
+}
+
+
+
+.bottom{  
     display: flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+ 
+    /* justify-content: space-between;
    
     margin-left: 12.5%;
-    margin-right: 17.5%;
-   
+    margin-right: 17.5%;   */
+}
+
+
+.bottom div h1{
+    color: rgb(24, 24, 24);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px;
+    margin-top: 20px;
     
-   
+}
+
+.bottom div p{
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 8px;
 }
 
 .line{
-    
-    margin-block: 50px;
-    width: 75%;
+    text-align: center;
+}
+.line hr{
+    /* margin-block: 50px; */
+    margin: 20px auto;  /*????*/
+    width: 980px;
     height: 1px;
     background-color: #888;
-    margin-inline: 12.5%;
-    
-
 }
 
 .bottom div{
@@ -498,36 +531,6 @@ body{
 .bottom div h1{
     color: black;
 }
-
-/* .grid .gridSec5 h1{
-    margin-top: 100px;
-
-    }
-
-    .grid .gridSec2 .gradient-text{
-    margin-top: 5%;
-    }
-    .grid .gridSec2 p{
-    margin-top: 0;
-    }
-    .grid .gridSec6 .gradient-text{
-    padding-top: 400px;
-    } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -539,6 +542,54 @@ body{
 }
 
 
+.footer1 p{
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 50px;
+    
+    
+}
+
+.footer1 p a{
+   
+    color: rgb(83, 163, 239);
+}
+
+
+.foot{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 40px;
+   gap: 280px;
+}
+.foot div{
+    display: flex;
+    gap: 30px;
+
+ 
+}
+.foot p{
+    color: #888;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.foot p a{
+    text-decoration: none;
+    color: #888;
+}
+.foot p a:hover{
+    text-decoration: underline;
+    
+}
+
+.foooter{
+    background-color: rgb(244, 242, 245);
+
+}
+
 
 
 
@@ -546,74 +597,33 @@ body{
 {
     .navtop div label{
         display: block;
-        margin-right: 3vh;
+        margin-right: 20px;
     }
-    
-  
     .navtop ul{
         display: none;
         position: fixed; 
-        top: 60px;
+        top: 45px;
         background-color: rgb(255, 255, 255);
         width: 100%;
-        height: 100vh;
-        
-
-    
+        height: 100%;
     }
-
     .navtop ul li{
-        padding: 20px;
-       
-        
+        padding: 20px;   
     }
-
     .navtop {
         display: flex;
-        justify-content: space-between;
-        
+        justify-content: space-between;    
     }
-
-
     .navtop .fa-apple{
-        margin-left: 3vh;
+        margin-left: 20px;
     }
-    
-    
-    
-
-
     #click:checked~.navtop ul{
         display: block;
     }
-    .grid .gridSec5 h1,
-    .grid .gridSec6 h1,
-    .grid .gridSec5 h2,
-    .grid .gridSec6 h2{ 
-    color: white;
-    }
-
-    .grid .gridSec5 h1{
-    margin-top: 48%;
-
-    }
-
-    .grid .gridSec2 .gradient-text{
-    margin-top: 5%;
-    }
-    .grid .gridSec2 p{
-    margin-top: 0;
-    }
-    .grid .gridSec6 .gradient-text{
-    margin-top: 130%;
-    }
-
-    
-    
 }
 
 @media screen and (max-width:750px) {
-    .grid{
+    /* .grid{
         height: 400vh;  
         display: grid;
         grid-template-columns: 100%;
@@ -622,12 +632,22 @@ body{
         gap: 12px;
         
        
+    } */
+    .grid{
+        height: 2800px;
+        grid-template-columns: repeat(1, auto);
+        grid-auto-rows: 1fr;  
+    }
+    .bottom{
+        flex-wrap: wrap;
+        align-items: center;
+
     }
 
+   
+
+
 }
-
-
-
 
 
 
