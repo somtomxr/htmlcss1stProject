@@ -389,14 +389,6 @@ body{
 
 
 
-
-.grid .in .bothbutton{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; */
-}
-
 .grid .in .bothbutton .button1{
     font-size: 14px;
     font-weight: 300;
@@ -561,7 +553,6 @@ body{
 .foot{
    display: flex;
    justify-content: center;
-   margin-bottom: 40px;
    gap: 280px;
 }
 .foot div{
@@ -574,6 +565,7 @@ body{
     color: #888;
     font-size: 12px;
     font-weight: 400;
+    mar
 }
 
 .foot p a{
@@ -587,7 +579,6 @@ body{
 
 .foooter{
     background-color: rgb(244, 242, 245);
-
 }
 
 
