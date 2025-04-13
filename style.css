@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 
@@ -81,7 +81,8 @@ body{
 
 .afternav p{
     text-align: center;
-    max-width: 95%;
+    margin: auto;
+    width: 95%;
 }
 
 .afternav a{
@@ -92,10 +93,16 @@ body{
 
 
 .section1{
-    background: linear-gradient(180deg, rgb(205, 230, 244), rgb(240, 245, 246));
+    /* background: linear-gradient(180deg, rgb(205, 230, 244), rgb(240, 245, 246)); */
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(ss/macbookair.jpg);
+
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 100%; /*Adjust as needed */
 
     
 
@@ -149,10 +156,9 @@ body{
     border-width: 1px;
     color: rgb(48, 111, 219);
 }
-.section1 img{
-    height: 350px; 
-}
+
 .gradient-text1{
+    margin-top: 350px;
     font-size: 21px;
     font-weight: 500;
     background: linear-gradient(90deg, #007aff, #ff2d55); /* Blue to Pinkish Red */
@@ -175,7 +181,11 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(159, 214, 229), rgb(241, 244, 242));
+    background-image: url(ss/ipadair.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 100%; /*Adjust as needed */
   
 }
 .section2 .heading{
@@ -234,16 +244,14 @@ body{
     color: rgb(48, 111, 219);  
 }
 
-.section2 .ipadimg{
-    height: 400px;
-    margin-right: 200px;  
-}
+
 .gradient-text2{
     font-size: 21px;
     font-weight: 500;
     background: linear-gradient(90deg, #007aff, #ff2d55); /* Blue to Pinkish Red */
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */     
+      -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */  
+    margin-top: 400px;     
 }
 
 
@@ -261,7 +269,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(242, 242, 245);
+    /* background: rgb(242, 242, 245); */
+    background-image: url(ss/macstudio.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    height: 100%; /*Adjust as needed */
 }
 
 .section3 h1{
@@ -311,10 +324,10 @@ body{
 }
 
 .section3 img{
-    height: 200px;   
+    /* height: 200px;    */
 }
 .gradient-text3{
-    margin-top: 50px;
+    margin-top: 250px;
     font-size: 21px;
     font-weight: 500;
     background: linear-gradient(90deg, #007aff, #ff2d55); /* Blue to Pinkish Red */
@@ -505,9 +518,6 @@ body{
     margin: 8px;
 }
 
-.line{
-    text-align: center;
-}
 .line hr{
     /* margin-block: 50px; */
     margin: 20px auto;  /*????*/
@@ -565,10 +575,9 @@ body{
     color: #888;
     font-size: 12px;
     font-weight: 400;
-    mar
 }
 
-.foot p a{
+.foot .div1 p a{
     text-decoration: none;
     color: #888;
 }
@@ -579,9 +588,18 @@ body{
 
 .foooter{
     background-color: rgb(244, 242, 245);
+    padding-bottom: 20px;
 }
 
-
+@media screen and (max-width:1080px){
+    .line hr{
+        /* margin-block: 50px; */
+        margin: 20px auto; /*  ???? */
+        width: 80%;
+        height: 1px;
+        background-color: #888;
+    }
+}
 
 
 @media screen and (max-width:830px) 
@@ -611,30 +629,183 @@ body{
     #click:checked~.navtop ul{
         display: block;
     }
+   
+
 }
 
 @media screen and (max-width:750px) {
-    /* .grid{
-        height: 400vh;  
-        display: grid;
-        grid-template-columns: 100%;
-        grid-auto-rows: 1fr;
-        margin: 12px;
-        gap: 12px;
-        
-       
-    } */
+    .afternav p{
+        width: 80%;
+    }
+    .section1,
+    .section2,
+    .section3{
+        height: 510px;
+    }
+    .section1{
+        background-image: url(ss/MobileView/macbookAirm4.jpeg);
+    }
+    .section2{
+        background-image: url(ss/MobileView/iPadAir.jpeg);
+    }
+    .section3{
+        background-image: url(ss/MobileView/MacStudio.jpeg);
+    }
+    
+
+    .section1 h1,
+    .section2 .heading,
+    .section2 .heading h1,
+    .section3 h1{
+        margin-top: -20px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .section1 h2,
+    .section2 h2,
+    .section3 h2{
+        font-size: 20px;
+    }
+    .section2 .heading img{
+        height: 30px;
+    }
+
+    .learnmore1,
+    .learnmore2,
+    .learnmore3{
+        font-size: 14px;
+        font-weight: 300;
+        height: 36px;
+        width: 104px;
+        color: white;
+        background-color: rgb(48, 111,219);
+        border-radius: 20px;
+        border: none;
+    }
+    
+    .buy1,
+    .buy2,
+    .buy3{
+        font-size: 14px;
+        font-weight: 300;
+        height: 35px;
+        width: 60px;
+        color: white;
+        background-color: transparent;
+        border-radius: 20px;
+        border: solid ;
+        border-color: rgb(48, 111, 219);
+        border-width: 1px;
+        color: rgb(48, 111, 219);
+    }    
+    .gradient-text1{
+        margin-top: 280px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .gradient-text2{
+        margin-top: 300px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+   
+    .gradient-text3{
+        margin-top: 210px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .section1 p,
+    .section2 p,
+    .section3 p{
+        display: none;
+    }
+ 
+
+
+
+
+
+
+
     .grid{
-        height: 2800px;
-        grid-template-columns: repeat(1, auto);
-        grid-auto-rows: 1fr;  
+        height: 3060px;
+        grid-template-columns: 1fr;
+        /* grid-auto-rows: 1fr;   */
     }
     .bottom{
         flex-wrap: wrap;
         align-items: center;
-
     }
 
+    .grid .gridSec2 {
+        background-image: url(ss/MobileView/iPhone.jpeg);
+    }
+    .grid .gridSec3 {
+        background-image: url(ss/tradein.jpg);
+    }
+    .grid .gridSec4 {
+        background-image: url(ss/MobileView/watch10.jpeg);
+    }
+    .grid .gridSec5 {
+        background-image: url(ss/airpods.jpg);
+    }
+    .grid .gridSec6 {
+        background-image: url(ss/MobileView/iPadPro.jpeg);
+    }  
+    .grid .gridSec2 h1,
+    .grid .gridSec5 h1,
+    .grid .gridSec6 h1{
+        margin-top: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+    .grid .gridSec1 h1{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .grid .gridSec2 h2{
+        display: none;
+    }
+    .grid .gridSec2 .bothbutton .button2{
+        color: rgb(0, 0, 0);
+        border-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+    .grid .gridSec2 .bothbutton .button1{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+    .grid .gridSec2 .gradient-text{
+        margin-top: 9px;
+        background: white;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */    
+     
+    }
+ 
+  
+    .grid .gridSec6 .gradient-text{
+        margin-top: 310px;
+    }
+
+    .grid .gridSec5 h1{
+        margin-top: 290px;
+    }
+    .grid .gridSec4 img,
+    .grid .gridSec3 img{
+        margin-top: 30px;
+    }
+
+    /* .foot .div1{
+        flex-wrap: wrap;
+        gap: 5px;
+    } */
+    .foot{
+    }
+
+
+  
    
 
 

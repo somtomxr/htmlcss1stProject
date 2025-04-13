@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Collapsible Option</title>
+    <style>
+        .option-group {
+            margin: 20px; 
+        }
+
+        .desktop-option .option-heading {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .sub-option {
+            padding: 8px 15px;
+        }
+        
+        .sub-option:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile view - collapsible */
+        .mobile-option {
+            display: none;
+        }
+        
+        .mobile-toggle {
+            display: none; /* Hide checkbox */
+        }
+        
+        .mobile-heading {
+            display: none;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+        }
+        
+        .mobile-heading::after {
+            content: "▼";
+            position: absolute;
+            right: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .mobile-toggle:checked ~ .mobile-heading::after {
+            transform: rotate(180deg);
+        }
+        
+        .mobile-sub-options {
+            display: none;
+            padding: 10px 0;
+        }
+        
+        .mobile-toggle:checked ~ .mobile-sub-options {
+            display: block;
+        }
+        
+        .mobile-sub-option {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        
+        .mobile-sub-option:hover {
+            background: #f8f8f8;
+        }
+        
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            .desktop-option {
+                display: none;
+            }
+            
+            .mobile-option {
+                display: block;
+            }
+            
+            .mobile-heading {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="option-group">
+        <!-- Desktop view - always expanded -->
+        <div class="desktop-option">
+            <div class="option-heading">Option</div>
+            <div class="sub-options">
+                <div class="sub-option">Yes</div>
+                <div class="sub-option">No</div>
+            </div>
+        </div>
+        
+        <!-- Mobile view - collapsible -->
+        <div class="mobile-option">
+            <input type="checkbox" id="mobile-toggle" class="mobile-toggle">
+            <label for="mobile-toggle" class="mobile-heading">Option</label>
+            <div class="mobile-sub-options">
+                <div class="mobile-sub-option">Yes</div>
+                <div class="mobile-sub-option">No</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
