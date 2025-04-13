@@ -4,59 +4,45 @@
     box-sizing: border-box
 }
 
-
-
-
-
-
 body{
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family:  -apple-system, 'Inter', sans-serif;
 }
-
 .navtop{
     position:  sticky;
     top: 0;
-    /* position: fixed; */
-    /* width: 100%; */
-
     background-color: rgba(251, 251, 251, 0.98);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 45px;
-    gap: 50px;
-    
-
-   
+    gap: 50px; 
+}
+#click{
+    display: none;
 }
 .navtop div{
     display: flex;
     gap: 50px;
  }
-
-
-
-
+.navtop div label{
+    display: none;
+}
 
 .navtop ul{
     display: flex;
     list-style: none;
     gap: 50px;
 }
-
 .navtop ul li a{
     
     font-weight: 200;
     font-size: 12px; 
 }
-
-
 .navtop a{
     text-decoration: none;
     color: black;
-    font-weight: 100;
-    
+    font-weight: 100;    
 }
 .fa-apple{
     font-size: 110%;
@@ -66,8 +52,7 @@ body{
 }
 
 .navtop ul li a:hover{
-    color: rgba(23, 21, 21, 0.647);
-    
+    color: rgba(23, 21, 21, 0.647); 
 }
 
 .afternav{
@@ -75,8 +60,7 @@ body{
     margin-top: 15px;
     padding-bottom: 15px;
     font-size: 13.5px;
-    font-weight: 300;
-    
+    font-weight: 300;  
 }
 
 .afternav p{
@@ -91,7 +75,6 @@ body{
 }
 
 
-
 .section1{
     /* background: linear-gradient(180deg, rgb(205, 230, 244), rgb(240, 245, 246)); */
     display: flex;
@@ -103,35 +86,25 @@ body{
     background-position: center;
     /* background-repeat: no-repeat; */
     height: 100%; /*Adjust as needed */
-
-    
-
-}
-    
+}  
 .section1 h1{
     color: rgb(29, 29, 31);
     padding-top: 50px;
     font-size: 55px;
     font-weight: 500;
 }
-
 .section1 h2{
     color: rgb(29, 29, 31);
     font-size:28px;
     font-weight: 300;
 }
-
-
 .bothbutton{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-top: 20px; 
-    
-    
+    padding-top: 20px;     
 }
-
 .learnmore1{
     font-size: 16px;
     font-weight: 300;
@@ -142,7 +115,6 @@ body{
     border-radius: 20px;
     border: none;
 }
-
 .buy1{
     font-size: 16px;
     font-weight: 300;
@@ -156,7 +128,6 @@ body{
     border-width: 1px;
     color: rgb(48, 111, 219);
 }
-
 .gradient-text1{
     margin-top: 350px;
     font-size: 21px;
@@ -165,8 +136,6 @@ body{
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; /*Ensure the gradient applies correctly     */
 }
-
-
 .section1 p{  
     color: #888;
     font-size: 14px;
@@ -174,6 +143,7 @@ body{
     margin-top: 8px;
     margin-bottom: 40px;
 }
+
 
 .section2{
     margin-top: 15px;
@@ -185,8 +155,7 @@ body{
     background-size: cover;
     background-position: center;
     /* background-repeat: no-repeat; */
-    height: 100%; /*Adjust as needed */
-  
+    height: 100%; /*Adjust as needed */ 
 }
 .section2 .heading{
     display: flex;
@@ -195,23 +164,19 @@ body{
     color: rgb(29, 29, 31);
     padding-top: 50px;
     gap: 10px;
-} 
-
+}
 .section2 .ipad{
     font-size: 60px;
     font-weight: 500;
 }
-
 .section2 .air{
  height: 40px;
 }
-
 .section2 h2{
     color: rgb(29, 29, 31);
     font-size:28px;
     font-weight: 300;
 }
-
 .bothbutton2{
     display: flex;
     justify-content: center;
@@ -229,7 +194,6 @@ body{
     border-radius: 20px;
     border: none; 
 }
-
 .buy2{
     font-size: 16px;
     font-weight: 300;
@@ -243,8 +207,6 @@ body{
     border-width: 1px;
     color: rgb(48, 111, 219);  
 }
-
-
 .gradient-text2{
     font-size: 21px;
     font-weight: 500;
@@ -253,8 +215,6 @@ body{
       -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */  
     margin-top: 400px;     
 }
-
-
 .section2 p{  
     color: #888;
     margin-top: 8px;
@@ -262,6 +222,7 @@ body{
     font-size: 14px;
     font-weight: 300;   
 }
+
 
 .section3{
     margin-top: 15px;
@@ -276,19 +237,16 @@ body{
     /* background-repeat: no-repeat; */
     height: 100%; /*Adjust as needed */
 }
-
 .section3 h1{
     color: rgb(29, 29, 31);
     font-size: 55px;
     font-weight: 600;
 }
-
 .section3 h2{
     color: rgb(29, 29, 31);
     font-size:28px;
     font-weight: 300;
 }
-
 .bothbutton3{
     display: flex;
     justify-content: center;
@@ -297,7 +255,6 @@ body{
     padding-top: 25px; 
     margin-bottom: 50px;  
 }
-
 .learnmore3{
     font-size: 16px;
     font-weight: 300;
@@ -308,7 +265,6 @@ body{
     border-radius: 20px;
     border: none;
 }
-
 .buy3{
     font-size: 16px;
     font-weight: 300;
@@ -322,10 +278,6 @@ body{
     border-width: 1px;
     color: rgb(48, 111, 219);
 }
-
-.section3 img{
-    /* height: 200px;    */
-}
 .gradient-text3{
     margin-top: 250px;
     font-size: 21px;
@@ -334,8 +286,6 @@ body{
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */  
 }
-
-
 .section3 p{  
     color: #888;
     font-size: 14px;
@@ -353,20 +303,16 @@ body{
     margin: 12px;
     gap: 12px;   
 }
-
 .grid .in {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center; 
     background-size: cover;
     background-position: center;
     /* background-repeat: no-repeat; */
     /* height: 100%; Adjust as needed */
-
     text-align: center;
 }
-
 .grid .in h1{
     margin-top: 50px;
     color: rgb(29, 29, 31);
@@ -378,8 +324,6 @@ body{
     font-size:20px;
     font-weight: 300;
 }
-
-
 .grid .gridSec1 {
     background-image: url(ss/ipad.jpg);
 }
@@ -398,10 +342,6 @@ body{
 .grid .gridSec6 {
     background-image: url(ss/ipadpro.jpg);
 }  
-
-
-
-
 .grid .in .bothbutton .button1{
     font-size: 14px;
     font-weight: 300;
@@ -412,7 +352,6 @@ body{
     border-radius: 20px;
     border: none;
 }
-
 .grid .in .bothbutton .button2{
     font-size: 14px;
     font-weight: 300;
@@ -488,44 +427,37 @@ body{
 }
 
 
-
+.foooter{
+    background-color: rgb(244, 242, 245);
+    padding-bottom: 20px;
+}
+#foooter{
+    width: 980px;
+    margin: auto;
+    padding-top: 5px;
+}
 .bottom{  
     display: flex;
-    display: flex;
-    justify-content: center;
-    gap: 85px;
- 
-    /* justify-content: space-between;
-   
-    margin-left: 12.5%;
-    margin-right: 17.5%;   */
+    justify-content: space-between;
+    margin-right: 100px;
 }
-
-
 .bottom div h1{
     color: rgb(24, 24, 24);
     font-size: 14px;
     font-weight: 400;
-    margin: 8px;
     margin-top: 20px;
-    
 }
-
 .bottom div p{
     color: #888;
     font-size: 12px;
     font-weight: 400;
-    margin: 8px;
+    margin-block: 8px;
 }
-
 .line hr{
-    /* margin-block: 50px; */
-    margin: 20px auto;  /*????*/
-    width: 980px;
+    margin-block: 50px;
     height: 1px;
     background-color: #888;
 }
-
 .bottom div{
     color: #888;
     font-size: 12px;
@@ -533,71 +465,41 @@ body{
 .bottom div h1{
     color: black;
 }
-
-
-
-#click{
-    display: none;
-}
-.navtop div label{
-    display: none;
-}
-
-
 .footer1 p{
-    text-align: center;
     color: #888;
     font-size: 12px;
     font-weight: 400;
-    margin-top: 50px;
-    
-    
+    margin-top: 50px; 
 }
-
 .footer1 p a{
-   
     color: rgb(83, 163, 239);
 }
-
-
 .foot{
    display: flex;
-   justify-content: center;
-   gap: 280px;
+   justify-content: space-between;
 }
 .foot div{
     display: flex;
     gap: 30px;
-
- 
 }
 .foot p{
     color: #888;
     font-size: 12px;
     font-weight: 400;
 }
-
 .foot .div1 p a{
     text-decoration: none;
     color: #888;
 }
 .foot p a:hover{
-    text-decoration: underline;
-    
+    text-decoration: underline;  
 }
 
-.foooter{
-    background-color: rgb(244, 242, 245);
-    padding-bottom: 20px;
-}
 
 @media screen and (max-width:1080px){
-    .line hr{
-        /* margin-block: 50px; */
-        margin: 20px auto; /*  ???? */
-        width: 80%;
-        height: 1px;
-        background-color: #888;
+    #foooter{
+        width: 95%;
+        margin: auto;
     }
 }
 
@@ -629,9 +531,8 @@ body{
     #click:checked~.navtop ul{
         display: block;
     }
-   
-
 }
+
 
 @media screen and (max-width:750px) {
     .afternav p{
@@ -651,8 +552,6 @@ body{
     .section3{
         background-image: url(ss/MobileView/MacStudio.jpeg);
     }
-    
-
     .section1 h1,
     .section2 .heading,
     .section2 .heading h1,
@@ -661,7 +560,6 @@ body{
         font-size: 40px;
         font-weight: 600;
     }
-
     .section1 h2,
     .section2 h2,
     .section3 h2{
@@ -670,7 +568,6 @@ body{
     .section2 .heading img{
         height: 30px;
     }
-
     .learnmore1,
     .learnmore2,
     .learnmore3{
@@ -683,7 +580,6 @@ body{
         border-radius: 20px;
         border: none;
     }
-    
     .buy1,
     .buy2,
     .buy3{
@@ -720,24 +616,12 @@ body{
     .section3 p{
         display: none;
     }
- 
-
-
-
-
-
 
 
     .grid{
         height: 3060px;
         grid-template-columns: 1fr;
-        /* grid-auto-rows: 1fr;   */
     }
-    .bottom{
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     .grid .gridSec2 {
         background-image: url(ss/MobileView/iPhone.jpeg);
     }
@@ -781,14 +665,10 @@ body{
         background: white;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;/* Ensure the gradient applies correctly */    
-     
     }
- 
-  
     .grid .gridSec6 .gradient-text{
         margin-top: 310px;
     }
-
     .grid .gridSec5 h1{
         margin-top: 290px;
     }
@@ -797,18 +677,29 @@ body{
         margin-top: 30px;
     }
 
-    /* .foot .div1{
-        flex-wrap: wrap;
-        gap: 5px;
-    } */
-    .foot{
+
+    .bottom{
+        display: block;
     }
-
-
-  
-   
-
-
+    .bottom div p{
+        display: none;
+    }
+    .bottom div h1{
+        font-size: 16px;
+        font-weight: 600;
+        color: #4d4d4d;
+    }
+    .foot{
+        flex-direction: column-reverse;
+        gap: 20px;      
+    }
+    .foot .div1{
+        flex-direction: column;
+        gap:5px;
+    }
+    .line hr{
+        margin-block: 30px;
+    }
 }
 
 
