@@ -8,6 +8,9 @@ body{
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family:  -apple-system, 'Inter', sans-serif;
 }
+
+
+/* Navbar */
 .navtop{
     position:  sticky;
     top: 0;
@@ -55,6 +58,7 @@ body{
     color: rgba(23, 21, 21, 0.647); 
 }
 
+/* Banner */
 .afternav{
     /* padding-top: 60px; */
     margin-top: 15px;
@@ -74,7 +78,7 @@ body{
     color: rgb(83, 163, 239);
 }
 
-
+/* Main Content */
 .section1{
     /* background: linear-gradient(180deg, rgb(205, 230, 244), rgb(240, 245, 246)); */
     display: flex;
@@ -123,9 +127,7 @@ body{
     color: white;
     background-color: transparent;
     border-radius: 20px;
-    border: solid ;
-    border-color: rgb(48, 111, 219);
-    border-width: 1px;
+    border: 1px solid rgb(48, 111, 219);
     color: rgb(48, 111, 219);
 }
 .gradient-text1{
@@ -202,9 +204,7 @@ body{
     color: white;
     background-color: transparent;
     border-radius: 20px;
-    border: solid ;
-    border-color: rgb(48, 111, 219);
-    border-width: 1px;
+    border: 1px solid rgb(48, 111, 219);
     color: rgb(48, 111, 219);  
 }
 .gradient-text2{
@@ -273,9 +273,7 @@ body{
     color: white;
     background-color: transparent;
     border-radius: 20px;
-    border: solid ;
-    border-color: rgb(48, 111, 219);
-    border-width: 1px;
+    border: 1px solid rgb(48, 111, 219);
     color: rgb(48, 111, 219);
 }
 .gradient-text3{
@@ -294,7 +292,7 @@ body{
     margin-bottom: 50px; 
 }  
 
-
+/* Grids */
 .grid{
     height: 1760px;
     display: grid;
@@ -478,10 +476,6 @@ body{
    display: flex;
    justify-content: space-between;
 }
-.foot div{
-    display: flex;
-    gap: 30px;
-}
 .foot p{
     color: #888;
     font-size: 12px;
@@ -495,7 +489,7 @@ body{
     text-decoration: underline;  
 }
 
-
+/* Responsive for all display */
 @media screen and (max-width:1080px){
     #foooter{
         width: 95%;
@@ -685,9 +679,11 @@ body{
         display: none;
     }
     .bottom div h1{
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 200;
         color: #4d4d4d;
+        background-color: #bebebe08;
+        padding-block: 10px;
     }
     .foot{
         flex-direction: column-reverse;
@@ -703,6 +699,46 @@ body{
 }
 
 
+/* animation */
+#buy:hover{
+    animation: changebgcolor 2s normal 1;
+}
+@keyframes changebgcolor {
+    40%{
+        border: 2px solid #007aff;    
+    }
+    80% {
+        border: 2px solid #006aff;    
+    }
+}
 
+.fa-apple:hover{
+    animation: logocolor 3s ease infinite;
+}
+@keyframes logocolor {
+    40%{
+        /* background: linear-gradient(90deg, #007aff, #ff2d55); Blue to Pinkish Red */
+        color: #007aff;
+    }
+    80%{
+        color:  #f7384ee4;
+    }
+    
+}
+
+
+
+/* hover */
+.bottom div h1:hover{
+    cursor: pointer;
+    color: #222222;
+    font-weight: 300;
+}
+a:hover{
+    font-weight: 500;
+}
+button:hover{
+    cursor: pointer;
+}
 
 
