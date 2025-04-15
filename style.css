@@ -620,7 +620,7 @@ body{
         background-image: url(ss/MobileView/iPhone.jpeg);
     }
     .grid .gridSec3 {
-        background-image: url(ss/tradein.jpg);
+        background-image: url(ss/tradeIn.jpg);
     }
     .grid .gridSec4 {
         background-image: url(ss/MobileView/watch10.jpeg);
@@ -717,7 +717,6 @@ body{
 }
 @keyframes logocolor {
     40%{
-        /* background: linear-gradient(90deg, #007aff, #ff2d55); Blue to Pinkish Red */
         color: #007aff;
     }
     80%{
